@@ -23,6 +23,8 @@ if ( ! defined( 'WPINC' ) ) {
 
 include __DIR__ . '/includes/is-palindrome.php';
 
+include __DIR__ . '/tests/webpage-test-is-palindrome.php';
+
 /**
  * Prepend Palindrome Notification
  *
