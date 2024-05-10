@@ -20,3 +20,18 @@ namespace salcode\PalindromeNotify;
 if ( ! defined( 'WPINC' ) ) {
 	die;
 }
+
+/**
+ * Prepend Palindrome Notification
+ *
+ * Prepend Palindrome Notification when title is a palindrome.
+ *
+ * @param string $content The post content.
+ * @return string The post content possibly prepending a palindrome notification.
+ */
+function palindrome_notify( $content ) {
+	return
+		'<div class="alert alert-success">Palindrome!</div> '
+		. $content;
+}
+add_filter( 'the_content', __NAMESPACE__ . '\palindrome_notify' );
