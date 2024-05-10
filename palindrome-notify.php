@@ -21,6 +21,8 @@ if ( ! defined( 'WPINC' ) ) {
 	die;
 }
 
+include __DIR__ . '/includes/is-palindrome.php';
+
 /**
  * Prepend Palindrome Notification
  *
