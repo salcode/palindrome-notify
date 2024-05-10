@@ -30,6 +30,9 @@ if ( ! defined( 'WPINC' ) ) {
  * @return string The post content possibly prepending a palindrome notification.
  */
 function palindrome_notify( $content ) {
+	if ( ! is_single() ) {
+		return $content;
+	}
 	return
 		'<div class="alert alert-success">Palindrome!</div> '
 		. $content;
