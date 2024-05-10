@@ -35,6 +35,9 @@ function palindrome_notify( $content ) {
 	if ( ! is_single() ) {
 		return $content;
 	}
+	if ( ! is_palindrome( get_the_title() ) ) {
+		return $content;
+	}
 	return
 		'<div class="alert alert-success">Palindrome!</div> '
 		. $content;
