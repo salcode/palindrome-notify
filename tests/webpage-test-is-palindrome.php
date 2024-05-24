@@ -13,3 +13,18 @@ function palindrome_tests( $content ) {
 	return $content;
 }
 add_filter( 'the_content', __NAMESPACE__ . '\palindrome_tests', 12 );
+
+/**
+ * Test is_palindrome()
+ *
+ * @param string $str      The string to test.
+ * @param bool   $expected The expected result.
+ */
+function test_is_palindrome( $str, $expected ) {
+
+	if ( $expected === is_palindrome( $str ) ) {
+		return '✅ ' . $str . "<br>\n";
+	} else {
+		return '❌ ' . $str . "<br>\n";
+	}
+}
