@@ -12,6 +12,7 @@ function palindrome_tests( $content ) {
 	$content = "palindrome_tests()<br>\n";
 	$content .= test_is_palindrome( 'racecar', true );
 	$content .= test_is_palindrome( 'salcode', false );
+	$content .= test_is_palindrome( 'Anna', true );
 	return $content;
 }
 add_filter( 'the_content', __NAMESPACE__ . '\palindrome_tests', 12 );
