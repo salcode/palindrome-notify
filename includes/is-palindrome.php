@@ -10,7 +10,7 @@ namespace salcode\PalindromeNotify;
  */
 function is_palindrome( $str ) {
 	$str_to_compare = strtolower(
-		str_replace( ' ', '', $str )
+		preg_replace('/[^A-Za-z0-9]/', '', $str)
 	);
 	return $str_to_compare === strrev( $str_to_compare );
 }
