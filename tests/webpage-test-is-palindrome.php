@@ -15,6 +15,7 @@ function palindrome_tests( $content ) {
 	$content .= test_is_palindrome( 'Anna', true );
 	$content .= test_is_palindrome( 'Never odd or even', true );
 	$content .= test_is_palindrome( "Go hang a salami, I'm a lasagna hog.", true );
+	$content .= test_is_palindrome( "Was it a car or a cat I saw?", true );
 	return $content;
 }
 add_filter( 'the_content', __NAMESPACE__ . '\palindrome_tests', 12 );
