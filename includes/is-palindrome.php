@@ -9,5 +9,6 @@ namespace salcode\PalindromeNotify;
  * @return bool True if the string is a palindrome.
  */
 function is_palindrome( $str ) {
-	return $str === strrev( $str );
+	$lc_str = strtolower( $str );
+	return $lc_str === strrev( $lc_str );
 }
