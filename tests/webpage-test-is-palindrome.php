@@ -13,6 +13,7 @@ function palindrome_tests( $content ) {
 	$content .= test_is_palindrome( 'racecar', true );
 	$content .= test_is_palindrome( 'salcode', false );
 	$content .= test_is_palindrome( 'Anna', true );
+	$content .= test_is_palindrome( 'Never odd or even', true );
 	return $content;
 }
 add_filter( 'the_content', __NAMESPACE__ . '\palindrome_tests', 12 );
