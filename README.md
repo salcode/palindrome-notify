@@ -35,3 +35,31 @@ php tests/cli-test-is-palindrome.php
 ```
 
 <img width="795" alt="image" src="https://github.com/salcode/palindrome-notify/assets/5194588/739e0d4d-ceec-49ab-9da0-425fff367f40">
+
+### 3. Run Unit Tests from the Command Line with the PHPUnit Framework
+
+[PHPUnit](https://phpunit.de/) is a testing framework for PHP. To run these tests you need to first
+
+#### Setup
+
+While PHPUnit can be installed directly on your machine, in my experience it is preferable to install it as part of your project as a DEV dependency using [Composer](https://getcomposer.org/) because over time it is likely you'll have different projects using different versions of PHPUnit.
+
+If you're new to Composer, you'll want to check out the Composer documentation on [Getting Started](https://getcomposer.org/doc/00-intro.md).
+
+Because PHPUnit has been defined as a dev dependency in `composer.json`, you'll install PHPUnit by running the following from the command line from the root directory of the plugin.
+
+```
+composer install
+```
+
+#### Run the PHPUnit Tests
+
+We'll run the version of PHPUnit installed by Composer with the following from the command line
+
+```
+./vendor/bin/phpunit
+```
+
+PHPUnit knows where to look for the relevant code based on the `phpunit.xml.dist` file we've added to the root directory of the plugin.
+
+![PHPUnit unit tests run successfully](https://github.com/salcode/palindrome-notify/assets/5194588/ac8929c5-4f8d-4da7-92a5-52683f50704c)
