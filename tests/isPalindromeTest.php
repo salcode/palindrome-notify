@@ -24,6 +24,11 @@ class isPalindromeTest extends TestCase {
 	public static function isPalindromeProvider() {
 		return [
 			[ 'racecar', true ],
+			[ 'salcode', false ],
+			[ 'Anna', true ],
+			[ 'Never odd or even', true ],
+			[ "Go hang a salami, I'm a lasagna hog.", true],
+			[ "Was it a car or a cat I saw?", true ],
 		];
 	}
 }
