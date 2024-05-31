@@ -28,7 +28,7 @@ include __DIR__ . '/includes/is-palindrome.php';
  * a single blog post page with the results of the
  * is_palindrome() unit tests.
  */
-include __DIR__ . '/tests/webpage-test-is-palindrome.php';
+// include __DIR__ . '/tests/webpage-test-is-palindrome.php';
 
 /**
  * Prepend Palindrome Notification
