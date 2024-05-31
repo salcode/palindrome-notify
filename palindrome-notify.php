@@ -24,6 +24,13 @@ if ( ! defined( 'WPINC' ) ) {
 include __DIR__ . '/includes/is-palindrome.php';
 
 /**
+ * Uncomment the line below to replace the content on
+ * a single blog post page with the results of the
+ * is_palindrome() unit tests.
+ */
+// include __DIR__ . '/tests/webpage-test-is-palindrome.php';
+
+/**
  * Prepend Palindrome Notification
  *
  * Prepend Palindrome Notification when title is a palindrome.
