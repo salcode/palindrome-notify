@@ -25,3 +25,13 @@ Now when you visit any blog post on your site, the content will be replaced with
 <img width="412" alt="image" src="https://github.com/salcode/palindrome-notify/assets/5194588/4a285326-5a7b-489e-9ea7-da819326c1b5">
 
 Remember to comment out this line when you are done running the tests.
+
+### 2. Run Unit Tests from the Command Line
+
+From the root directory of the plugin, run the following command from the command line to run generic PHP code that has been added to this plugin.
+
+```bash
+php tests/cli-test-is-palindrome.php
+```
+
+<img width="795" alt="image" src="https://github.com/salcode/palindrome-notify/assets/5194588/739e0d4d-ceec-49ab-9da0-425fff367f40">
