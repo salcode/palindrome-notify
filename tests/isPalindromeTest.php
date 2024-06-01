@@ -14,12 +14,12 @@ class isPalindromeTest extends TestCase {
 	 * @param bool   $expected The expected result (true or false).
 	 */
 	#[DataProvider('isPalindromeProvider')]
-    public function testIsPalindrome( $str, $expected ) {
-        $this->assertEquals(
-            $expected,
+	public function testIsPalindrome( $str, $expected ) {
+		$this->assertEquals(
+			$expected,
 			is_palindrome( $str ),
-        );
-    }
+		);
+	}
 
 	public static function isPalindromeProvider() {
 		return [
