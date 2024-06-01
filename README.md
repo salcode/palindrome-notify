@@ -22,7 +22,7 @@ In the root file `palindrome-notify.php` uncomment the line
 
 Now when you visit any blog post on your site, the content will be replaced with the results of the unit tests.
 
-<img width="412" alt="image" src="https://github.com/salcode/palindrome-notify/assets/5194588/4a285326-5a7b-489e-9ea7-da819326c1b5">
+<img width="535" alt="image" src="https://github.com/salcode/palindrome-notify/assets/5194588/1389045c-cadf-4c8c-a7a9-e2a122534c2c">
 
 Remember to comment out this line when you are done running the tests.
 
