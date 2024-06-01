@@ -1,0 +1,15 @@
+{
+    "name": "salcode/palindrome-notify",
+    "description": "WordPress plugin to display an alert on the page when the title is a palindrome.",
+    "type": "wordpress-plugin",
+    "require-dev": {
+        "phpunit/phpunit": "^11.1"
+    },
+    "license": "apache-2.0",
+    "authors": [
+        {
+            "name": "Sal Ferrarello"
+        }
+    ],
+    "require": {}
+}
